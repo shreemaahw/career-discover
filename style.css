@@ -1,0 +1,88 @@
+.bg-white {
+    background: white;
+}
+
+.bg-dark-primary {
+    background: #0062cc;
+}
+
+.bg-darkest-primary {
+    background: #18305e;
+}
+
+.text-dark-primary {
+    color: #0062cc;
+}
+
+.bg-light-primary {
+    background: #ecf2fe;
+}
+
+.bg-light-success {
+    background: #ddfaff;
+}
+
+.bg-light-warning {
+    background: #ede3c6;
+}
+
+about-us grid-list app-card>.card {
+    width: 75vw !important;
+}
+
+our-service grid-list app-card>.card {
+    width: 90vw !important;
+    display: flex;
+    flex-direction: row;
+}
+
+our-service grid-list app-card>.card>.card-header {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    background: transparent;
+}
+
+our-service grid-list app-card>.card .card-body>.card-title {
+    position: absolute;
+    top: 0.25rem;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+}
+
+our-service grid-list app-card>.card .card-body .card-desc {
+    margin-top: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+about-us grid-list app-card:last-child, our-service grid-list app-card:last-child {
+    margin-right: 20vw !important;
+}
+
+about-us grid-list app-card>.card .card-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+about-us grid-list app-card>.card .card-body .card-title {
+    color: #6c757d;
+}
+
+@media (min-width: 768px) {
+    about-us grid-list app-card>.card, our-service grid-list app-card>.card {
+        width: 250px !important;
+    }
+    about-us grid-list>.item-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    about-us grid-list app-card:last-child {
+        margin-right: 0 !important;
+    }
+}
